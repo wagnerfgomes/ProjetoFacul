@@ -1,0 +1,211 @@
+@import url(./padrao.css);
+
+
+/*--------------CSS RESET--------------*/
+:root {
+    font-size: 62.5%;
+    --principal: #FF0000;
+    --claro: #F9F5F5;
+    --escuro: #1C201D;
+    --hover: #FFC0B4;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+}
+
+body {
+    max-width: 100vw;
+    height: 100%;
+    font-size: 1.6rem;
+    background-color: var(--claro);
+}
+
+header {
+    position: fixed;
+    backdrop-filter: blur(5rem);
+    width: 100vw;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.icone-mobile {
+    height: 2.4rem;
+}
+
+.logo-type-R {
+    height: 1.2rem;
+}
+
+.logo-honda {
+    display: none;
+    height: 2.4rem;
+}
+
+.menu-hambuger {
+    height: 4rem;
+    width: 4rem;
+    padding: .8rem;
+    background-color: var(--principal);
+}
+
+.material-symbols-outlined {
+    color: var(--claro);
+}
+
+.navegacao {
+    position: absolute;
+    top: 5.7rem;
+    right: 1.6rem;
+    width: 30rem;
+    height: 60rem;
+    background-color: #FF0000;
+}
+
+.navegacao-esconder {
+    display: none;
+}
+
+main {
+    padding-top: 5.7rem;
+}
+
+.banner {
+    height: 50rem;
+    background-image: url(../assets/1920x700_desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: top;
+    padding: 0 1.6rem;
+    margin-bottom: -10rem;
+}
+
+.banner__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+    position: absolute;
+    top: 38rem;
+    left: 0;
+    background-color: var(--claro);
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, 0.25);
+}
+
+.banner__container__subtitulo {
+    font-size: 1.4rem;
+}
+
+.especificacao {
+    padding: 9rem 1.6rem 0 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.especificacao__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.especificacao__container__carro {
+    pointer-events: none;
+    width: 80%;
+}
+
+.especificacao__container__lista {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 0 1.6rem;
+}
+
+.especificacao__container__lista li {
+    font-size: 1.6rem;
+}
+
+.especificacao__container__container-input {
+    display: flex;
+    gap: .8rem;
+}
+
+.container-input__input {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+
+.label-carro-azul {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background-color: blue;
+    border: .1rem solid black;
+}
+
+.label-carro-vermelho {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background-color: red;
+    border: .1rem solid black;
+}
+
+.label-carro-branco {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background-color: white;
+    border: .1rem solid black;
+
+}
+
+#cor-carro-azul {
+    accent-color: blue;
+    display: none;
+}
+
+#cor-carro-vermelho {
+    accent-color: red;
+    display: none;
+}
+
+#cor-carro-branco {
+    accent-color: white;
+    display: none;
+}
+
+#cor-carro-azul:checked ~ .label-carro-azul {
+    box-shadow: 0 0 .1rem .3rem var(--principal);
+}
+
+#cor-carro-vermelho:checked ~ .label-carro-vermelho {
+    box-shadow: 0 0 .1rem .3rem var(--principal);
+}
+
+#cor-carro-branco:checked ~ .label-carro-branco {
+    box-shadow: 0 0 .1rem .3rem var(--principal);
+}
+
+.especificacao__valor{
+    font-weight: 700;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+	font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+	--paragraph-space: 0;
+	--title-space: 1rem;
+	font-weight: 300;
+}
+
+.space-text-above,
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6,
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+	margin-top: var(--paragraph-space);
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+	margin-top: var(--title-space);
+}
+
+p + p {
+	margin-top: var(--title-space);
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+.space-text-below {
+	margin-bottom: var(--paragraph-space);
+}
+
+p.bold,
+span.bold,
+.body-1.bold,
+.body-2.bold,
+p .bold,
+span .bold,
+.body-1 .bold,
+.body-2 .bold,
+p strong,
+span strong,
+.body-1 strong,
+.body-2 strong,
+p b,
+span b,
+.body-1 b,
+.body-2 b {
+		font-weight: 700;
+	}
+
+
+h1, .title-1 ,h2, .title-2 ,h3, .title-3 ,h4, .title-4 ,h5, .title-5 ,h6, .title-6  {
+		font-style: normal;
+		text-transform: none;
+		max-width: 144rem;
+        font-style: italic;
+	}
+
+	p,
+	.max-w-text {
+		max-width: 144rem;
+	}
+
+
+h1, .title-1 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: -0.004em;
+}
+
+h2, .title-2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: -0.003em;
+}
+
+h3, .title-3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: -0.001em;
+}
+
+h4, .title-4 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -0.001em;
+}
+
+h5, .title-5 {
+    font-size: 2.0rem;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+
+h6, .title-6 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+}
+
+p, button, .body-1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.001em;
+}
+
+label, figcaption, input, .body-2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.tooltip {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.118em;
+}
+
+    
+@media (min-width: 1440px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    h1, .title-1 {
+        font-size: 7.6rem;
+
+    }
+
+    h2, .title-2 {
+        font-size: 6.2rem;
+
+    }
+
+    h3, .title-3 {
+        font-size: 4.8rem;
+
+    }
+
+    h4, .title-4 {
+        font-size: 4.0rem;
+
+    }
+
+    h5, .title-5 {
+        font-size: 3.2rem;
+
+    }
+
+    h6, .title-6 {
+        font-size: 2.6rem;
+
+    }
+
+    p, button, .body-1 {
+        font-size: 1.6rem;
+
+    }
+
+    label, figcaption, input, .body-2 {
+        font-size: 1.2rem;
+
+    }
+
+    .tooltip {
+        font-size: 1.0rem;
+    }
+    
+
+}

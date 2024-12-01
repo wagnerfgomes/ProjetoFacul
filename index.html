@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type R</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsivo.css">
+    <link rel="stylesheet" href="./styles/texto.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <script defer type="module" src="./scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/favicon.png" class="icone-mobile">
+
+        <img src="./assets/Logo.svg" class="logo-honda">
+
+        <img src="./assets/Logo type R.svg" class="logo-type-R">
+
+        <button class="menu-hambuger" id="menuHambuguer"><span id="menuHambuguerIcone"
+                class="material-symbols-outlined">
+                menu
+            </span></button>
+        <nav id="navegacao" class="navegacao navegacao-esconder"></nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__container">
+                <h1 class="banner__container__titulo">CIVIC TYPE R</h1>
+                <h6 class="banner__container__subtitulo">Um esportivo sem limites</h6>
+                <a href="" class="banner__container__tenhoenteresse button">Tenho Interesse</a>
+            </div>
+        </section>
+        <section class="especificacao">
+            <h2 class="especificacao__titulo">
+                ESPECIFICAÇÕES
+            </h2>
+            <div class="especificacao__container">
+                <img id="img-carro" class="especificacao__container__carro" src="./assets/carro-azul.png">
+                <label for="cor-carro">Escolha a cor do carro:</label>
+                
+                <form class="especificacao__container__container-input">
+
+                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-azul" value="azul">
+                    <label class="label-carro-azul label-carro" for="cor-carro-azul" ></label>
+
+                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-vermelho" value="vermelho">
+                    <label class="label-carro-vermelho label-carro" for="cor-carro-vermelho"></label>
+
+                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-branco" value="branco">
+                    <label class="label-carro-branco label-carro" for="cor-carro-branco"></label>
+
+                    <button type="submit" id="btn-mudar" class="button">Testar Cor</button>
+                </form>
+                <ul class="especificacao__container__lista">
+                    <li>Motor à combustão 2.0 DI DOHC VTEC Turbo de 297cv
+                    </li>
+                    <li>Transmissão manual de 6 Marchas com tecnologia
+                        Rev-Match</li>
+                    <li>Liga leve 19 polegadas</li>
+                    <li>Aerofólio com fixação em base de alumínio</li>
+                    <li>Aplicativo Honda LogR</li>
+                </ul>
+            </div>
+            <p class="especificacao__valor">A partir de R$ 429.900,00*</p>
+            <a class="especificacao__compar button">Garantir o meu Civic Type-R</a>
+            
+        </section>
+    </main>
+</body>
+
+</html>
+
+<!-- "Custom Honda Civic Type-R (2024)" (https://skfb.ly/p7Tqs) by Jumping Jax is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
