@@ -1,4 +1,10 @@
 @media (min-width: 810px){
+
+    .button{
+        padding: 1.2rem 2.4rem;
+        font-size: 1.4rem;
+    }
+
     header{
         padding: 1.6rem 2.4rem;
     }
@@ -37,6 +43,62 @@
     .banner{
         background-size: cover;
         background-position: 25%;
+        margin-bottom: 10rem;
+    }
+
+    .especificacao{
+        padding: 0rem 2.4rem 0 2.4rem;
+    }
+
+    .especificacao__container__carro{
+        width: 80%;
+        align-self: center;
+    }
+
+    .especificacao__container__label{
+        font-size: 1.6rem;
+    }
+
+    .especificacao__titulo{
+        text-align: end;
+        font-size: 3.2rem;
+    }
+
+    .especificacao__container__container-input {
+        gap: 1.6rem;
+    }
+    .especificacao__container__lista li {
+        font-size: 1.6rem;
+    }
+
+    .label-carro-azul {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    
+    .label-carro-vermelho {
+        width: 3.2rem;
+        height: 3.2rem;  
+    }
+    
+    .label-carro-branco {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .exposicao{
+        height: 100%;
+    }
+
+    .exposicao iframe{
+        width: 80%;
+        height: 44rem;
+    }
+
+    #to-top{
+        width: 4.8rem;
+        height: 4.8rem;
+        right: -95.2rem;       
     }
 }
 
@@ -44,6 +106,12 @@
     header{
         padding: 2.4rem 10.4rem;
     }
+
+    .navegacao{
+        top: 7.7rem;
+        right: 10.6rem;
+    }
+
     main {
         padding-top: 8.5rem;
     }
@@ -78,8 +146,29 @@
         background-size: 120%;
         background-position: 25%;
     }
+
     .banner__container {
         top: 56rem;
         padding: 2.4rem 4.8rem 2.4rem 4.8rem;
+    }
+
+    .especificacao{
+        padding: 0 10.4rem 0 10.4rem;
+    }
+
+    .especificacao__titulo{
+        text-align: end;
+        font-size: 4rem;
+    }
+
+    .exposicao iframe{
+        width: 70%;
+
+    }
+
+    #to-top{
+        width: 4.8rem;
+        height: 4.8rem;
+        right: -138rem;       
     }
 }

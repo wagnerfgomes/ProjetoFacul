@@ -69,20 +69,40 @@ header {
 }
 
 .navegacao {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
     position: absolute;
     top: 5.7rem;
     right: 1.6rem;
-    width: 30rem;
-    height: 60rem;
-    background-color: #FF0000;
+    padding: 2.4rem 3.2rem;
+    background-color: var(--claro);
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, 0.25);
+}
+.navegacao .button{
+    width: 100%;
+    padding: 1.6rem 1.6rem;
 }
 
 .navegacao-esconder {
     display: none;
 }
 
+.login-link{
+    text-decoration: underline;
+    color: var(--principal);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+}
+
 main {
     padding-top: 5.7rem;
+    height: 100%;
 }
 
 .banner {
@@ -113,10 +133,10 @@ main {
 }
 
 .especificacao {
+    width: 100%;
     padding: 9rem 1.6rem 0 1.6rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.6rem;
 }
 
@@ -129,7 +149,8 @@ main {
 
 .especificacao__container__carro {
     pointer-events: none;
-    width: 80%;
+    width: 100%;
+    justify-self: center;
 }
 
 .especificacao__container__lista {
@@ -140,7 +161,7 @@ main {
 }
 
 .especificacao__container__lista li {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .especificacao__container__container-input {
@@ -152,7 +173,6 @@ main {
     width: 2.4rem;
     height: 2.4rem;
 }
-
 
 .label-carro-azul {
     width: 2.4rem;
@@ -208,4 +228,107 @@ main {
 
 .especificacao__valor{
     font-weight: 700;
+    font-size: 1.6rem;
+    justify-self: center;
+}
+
+.especificacao__compar{
+    justify-self: center;
+}
+
+.exposicao{
+    padding: 0 1.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.8rem;
+}
+
+footer{
+    background-color: var(--principal);
+    margin-top: 3.2rem;
+}
+
+
+.creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--claro);
+    padding: 1.6rem 0;
+}
+
+#to-top{
+    position: relative;
+    bottom: -1.5rem;
+    right: -37.2rem;
+    background-color: var(--principal);
+    color: var(--claro);
+    width: 4rem;
+    height: 4rem;
+    padding: .8rem;
+    animation: pulinho 1s infinite;
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, 0.25);
+}
+
+@keyframes pulinho {
+    0%{
+        bottom: 2rem;
+    }
+    50%{
+        bottom: 1rem;
+    }    
+    100%{
+        bottom: -1rem;
+    }    
+}
+
+
+/* login */
+.body-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 8rem;
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, 0.25);
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem; 
+}
+
+.form-container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem; 
+}
+
+.form-container form input{
+    border: .1rem solid var(--principal);
+    height: 3.2rem;
+    width: 32rem;
+    border-radius: 100px;
+    padding: 0 1.6rem;
+}
+
+.aviso{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--principal);
 }

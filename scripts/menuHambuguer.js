@@ -1,18 +1,16 @@
-const menuHambugerIcone = document.querySelector('#menuHambuguerIcone');
-const navegacao = document.querySelector('#navegacao');
-const btnMenuHambuger = document.querySelector('#menuHambuguer');
+const menuHambugerIcone = document.getElementById('menuHambuguerIcone');
+const navegacao = document.getElementById('navegacao');
+const btnMenuHambuger = document.getElementById('menuHambuguer');
 
 const menuHambuger = () => {
         if (navegacao.classList.contains('navegacao-esconder')) {
             navegacao.classList.remove('navegacao-esconder');
-            menuHambugerIcone.innerHTML = 'close'
+            menuHambugerIcone.innerHTML = 'close';
         } else {
             navegacao.classList.add('navegacao-esconder');
-            menuHambugerIcone.innerHTML = 'menu'
+            menuHambugerIcone.innerHTML = 'menu';
         }
 }
-
-
 
 btnMenuHambuger.addEventListener('click',()=>{
     menuHambuger()

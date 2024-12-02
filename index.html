@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img src="./assets/favicon.png" class="icone-mobile">
+        <img src="./assets/favicon.png" id="top" class="icone-mobile">
 
         <img src="./assets/Logo.svg" class="logo-honda">
 
@@ -26,7 +26,11 @@
                 class="material-symbols-outlined">
                 menu
             </span></button>
-        <nav id="navegacao" class="navegacao navegacao-esconder"></nav>
+        <nav id="navegacao" class="navegacao navegacao-esconder">
+            <button id="btn-especificacao" class="button">Especificações</button>
+            <button id="btn-video" class="button">Video</button>
+            <a href="./login.html" class="login-link">LOGIN / CADASTRAR</a>
+        </nav>
     </header>
     <main>
         <section class="banner">
@@ -36,23 +40,26 @@
                 <a href="" class="banner__container__tenhoenteresse button">Tenho Interesse</a>
             </div>
         </section>
-        <section class="especificacao">
+        <section id="especificacao" class="especificacao">
             <h2 class="especificacao__titulo">
                 ESPECIFICAÇÕES
             </h2>
             <div class="especificacao__container">
                 <img id="img-carro" class="especificacao__container__carro" src="./assets/carro-azul.png">
-                <label for="cor-carro">Escolha a cor do carro:</label>
-                
+                <label class="especificacao__container__label" for="cor-carro">Escolha a cor do carro:</label>
+
                 <form class="especificacao__container__container-input">
 
-                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-azul" value="azul">
-                    <label class="label-carro-azul label-carro" for="cor-carro-azul" ></label>
+                    <input checked class="container-input__input" type="radio" name="cor-carro" id="cor-carro-azul"
+                        value="azul">
+                    <label class="label-carro-azul label-carro" for="cor-carro-azul"></label>
 
-                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-vermelho" value="vermelho">
+                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-vermelho"
+                        value="vermelho">
                     <label class="label-carro-vermelho label-carro" for="cor-carro-vermelho"></label>
 
-                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-branco" value="branco">
+                    <input class="container-input__input" type="radio" name="cor-carro" id="cor-carro-branco"
+                        value="branco">
                     <label class="label-carro-branco label-carro" for="cor-carro-branco"></label>
 
                     <button type="submit" id="btn-mudar" class="button">Testar Cor</button>
@@ -69,9 +76,20 @@
             </div>
             <p class="especificacao__valor">A partir de R$ 429.900,00*</p>
             <a class="especificacao__compar button">Garantir o meu Civic Type-R</a>
-            
         </section>
+        <section id="exposicao" class="exposicao">
+            <iframe height="100%" src="https://www.youtube.com/embed/WFNGfQn8Iwg?si=Z-MbrypdIwvFrSrn&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <button id="to-top"><span class=" icone-toUp material-symbols-outlined">arrow_upward</span></button>
     </main>
+
+    <footer>
+        
+        <p class="creditos">Desenvolvido por Wagner Felipe</p>
+    </footer>
 </body>
 
 </html>

@@ -3,7 +3,9 @@ const carroImg = document.getElementById('img-carro')
 
 mudarCorBtn.addEventListener('click', (evento)=>{
     evento.preventDefault();
+
     const inputCor = document.querySelector('input[name="cor-carro"]:checked');
+    
     switch (inputCor.value) {
         case 'vermelho':
             carroImg.src = "./assets/carro-vermelho.png";
